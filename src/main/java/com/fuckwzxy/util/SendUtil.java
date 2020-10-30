@@ -13,6 +13,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
+import javax.sound.midi.Soundbank;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 
 /**
  * @author wzh
@@ -29,26 +35,8 @@ public class SendUtil {
         //body
         request.body(apiInfo.getBody().replace("seq=3", "seq=" + seq));
 
-
         //return body
         request.execute();
-    }
-
-    public String GetJSON(UserInfo userInfo, ApiInfo getSignMessageApiInfo) {
-        HttpRequest request = createHttpRequest(getSignMessageApiInfo,userInfo);
-
-        //参数
-        request.form("page", 1);
-        request.form("size", 5);
-
-        //得到返回的JSON并解析
-        String body = request.execute().body();
-
-        return body;
-        /**
-         * JSONObject data = (JSONObject) ((JSONArray) JSONUtil.parseObj(body).get("data")).get(0);
-         * return new SignMessage((String) data.getObj("id"), (String) data.get("logId"));
-         */
     }
 
     /**
@@ -60,33 +48,14 @@ public class SendUtil {
 
     public SignMessage getSignMessage(UserInfo userInfo, ApiInfo getSignMessageApiInfo) {
         HttpRequest request = createHttpRequest(getSignMessageApiInfo,userInfo);
-
         //参数
         request.form("page", 1);
         request.form("size", 5);
-
         //得到返回的JSON并解析
         String body = request.execute().body();
 
-
         JSONObject data = (JSONObject) ((JSONArray) JSONUtil.parseObj(body).get("data")).get(0);
-
         return new SignMessage((String) data.getObj("id"), (String) data.get("logId"));
-    }
-
-    public boolean needSign(UserInfo userInfo, ApiInfo getSignMessageApiInfo) {
-        HttpRequest request = createHttpRequest(getSignMessageApiInfo,userInfo);
-
-        //参数
-        request.form("page", 1);
-        request.form("size", 5);
-
-        //得到返回的JSON并解析
-        String body = request.execute().body();
-
-        JSONObject data = (JSONObject) ((JSONArray) JSONUtil.parseObj(body).get("data")).get(0);
-
-        return Integer.parseInt(data.get("state").toString()) == 0;
     }
 
     @Async
@@ -104,10 +73,18 @@ public class SendUtil {
         data.set("township", "官洲街道");
         data.set("city", "广州市");
         request.body(data.toString());
-        //{"name":"李广", "values":[1,2,45,"你好"] }
-
         request.execute();
+    }
 
+    public String GetJSON(UserInfo userInfo, ApiInfo getSignMessageApiInfo) {
+        HttpRequest request = createHttpRequest(getSignMessageApiInfo,userInfo);
+        //参数
+        request.form("page", 1);
+        request.form("size", 5);
+        //得到返回的JSON并解析
+        String body = request.execute().body();
+
+        return body;
     }
 
     public boolean needCheck(ApiInfo apiInfo,UserInfo userInfo, int seq){
@@ -118,16 +95,42 @@ public class SendUtil {
         return Integer.parseInt(data.get("state").toString()) == 0;
     }
 
+    public List<String> getAllNoSign(ApiInfo apiInfo,UserInfo userInfo, int seq){
+        HttpRequest request = createHttpRequest(apiInfo,userInfo);
+        //body
+        SimpleDateFormat df = new SimpleDateFormat("yyyyMMdd");// 设置日期格式
+        String date = df.format(new Date());
+
+        String httpbody = apiInfo.getBody().replace("seq=3", "seq=" + seq);
+        httpbody = httpbody.replace("date=20201030","date="+date);
+        request.body(httpbody);
+
+        String body = request.execute().body();
+        if(!JSONUtil.parseObj(body).containsKey("data") ){
+            return null;
+        }else{
+            List<String> list = new ArrayList<>();
+            JSONArray arr = (JSONArray) JSONUtil.parseObj(body).get("data");
+            for (int i = 0; i < arr.size() ; i++) {
+                JSONObject stu =  (JSONObject) arr.get(i);
+                list.add((String) stu.get("userId"));
+            }
+            return  list;
+        }
+    }
+
+    public boolean replaceSign(ApiInfo apiInfo,UserInfo userInfo, int seq){
+        return false;
+    }
+
     /**
      * 创建HttpRequest对象
      */
     private HttpRequest createHttpRequest(ApiInfo apiInfo,UserInfo userInfo) {
         //请求方法和请求url
         HttpRequest request = request = apiInfo.getMethod().equals(ApiConstant.METHOD_GET)?HttpRequest.get(apiInfo.getUrl()):HttpRequest.post(apiInfo.getUrl());
-
         //报文头
         request.contentType(apiInfo.getContenttype());
-
         //token
         request.header("token", userInfo.getToken());
 
