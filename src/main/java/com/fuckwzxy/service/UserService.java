@@ -1,15 +1,12 @@
 package com.fuckwzxy.service;
 
 import com.fuckwzxy.bean.UserInfo;
+import com.fuckwzxy.common.Result;
+
+import java.text.ParseException;
 
 public interface UserService  {
-    void addUser(UserInfo userInfo);
+    <T> Result addUser(UserInfo userInfo);
 
-
-    /**
-     * 修改用户
-     * @param userInfo 值
-     * @return 结果字符串
-     */
-    String updateUser(UserInfo userInfo);
+    <T> Result updateUser(UserInfo userInfo) throws ParseException;
 }

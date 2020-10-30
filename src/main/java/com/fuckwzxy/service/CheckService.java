@@ -1,5 +1,7 @@
 package com.fuckwzxy.service;
 
+import java.util.List;
+
 /**
  * @author wzh
  * 2020/9/23 19:03
@@ -24,4 +26,6 @@ public interface CheckService {
      * 签到
      */
     void singIn();
+
+
 }

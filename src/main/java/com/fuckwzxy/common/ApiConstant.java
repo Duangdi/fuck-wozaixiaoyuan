@@ -34,4 +34,5 @@ public class ApiConstant {
     public static final int NEED_CHECK = 2;
     public static final int GET_SIGN_MESSAGE = 3;
     public static final int DO_SIGN = 4;
+    public static final int GET_All_NO_SIGN = 5;
 }
