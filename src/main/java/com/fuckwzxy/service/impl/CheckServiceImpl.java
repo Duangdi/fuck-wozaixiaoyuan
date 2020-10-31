@@ -81,7 +81,7 @@ public class CheckServiceImpl implements CheckService {
                 continue;
             }else{
                 data = (JSONObject) ((JSONArray) JSONUtil.parseObj(body).get("data")).get(0);
-                if(Integer.parseInt(data.get("state").toString()) == 1) {
+                if(Integer.parseInt(data.get("state").toString()) != 1) {
                     System.out.println("这个b已打过卡");
                     continue;
                 }
