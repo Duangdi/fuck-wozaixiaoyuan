@@ -77,10 +77,12 @@ public class CheckServiceImpl implements CheckService {
             String body = sendUtil.GetJSON(userInfo,getSignMessageApiInfo);
             JSONObject data =  null;
             if(!JSONUtil.parseObj(body).containsKey("data") ) {
+                System.out.println("这个b的token失效");
                 continue;
             }else{
                 data = (JSONObject) ((JSONArray) JSONUtil.parseObj(body).get("data")).get(0);
                 if(Integer.parseInt(data.get("state").toString()) == 1) {
+                    System.out.println("这个b已打过卡");
                     continue;
                 }
             }
