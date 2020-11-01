@@ -46,7 +46,11 @@ public class UserServiceImpl implements UserService {
             return ResultFactory.fail(ResultCode.USER_PRESENCE);
         }
 
-        userMapper.insert(userInfo);
+        try {
+            userMapper.insertSelective(userInfo);
+        }catch (Exception e){
+            return ResultFactory.fail(ResultCode.REGISTER_FAIL);
+        }
         
         Map<Object, Object> map = MapBuilder.create()
                 .put("id", userInfo.getId())
@@ -75,8 +79,10 @@ public class UserServiceImpl implements UserService {
             if(status == 0) return  ResultFactory.fail(ResultCode.UPDATE_FAIL);
 
 
-            helper(userInfo);//避免你刚注册 无法触发打卡或晚签的尴尬
+            ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(7);//获取校验token API
+            if(!sendUtil.JudgeTokenIsValid(apiInfo,userInfoUpdateVo)) return ResultFactory.fail(ResultCode.TOKEN_INVALID);
 
+            helper(userInfo);//避免你刚注册 无法触发打卡或晚签的尴尬
 
             Map<Object, Object> map = MapBuilder.create()
                     .put("id", userInfo.getId())
@@ -116,6 +122,7 @@ public class UserServiceImpl implements UserService {
         ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(ApiConstant.GET_SIGN_MESSAGE);//获取三检状况API
         String body = sendUtil.GetJSON(userInfo,apiInfo);
 
+        if(!JSONUtil.parseObj(body).containsKey("data")) return;
         JSONObject data = (JSONObject) ((JSONArray) JSONUtil.parseObj(body).get("data")).get(0);
 
         if(Integer.parseInt(data.get("state").toString()) == 1){

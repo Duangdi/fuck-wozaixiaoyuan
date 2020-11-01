@@ -132,6 +132,16 @@ public class SendUtil {
         request.execute();
     }
 
+
+    public boolean JudgeTokenIsValid(ApiInfo apiInfo,UserInfo userInfo){
+        HttpRequest request = createHttpRequest(apiInfo,userInfo);
+
+        //得到返回的JSON并解析
+        String body = request.execute().body();
+
+        if(JSONUtil.parseObj(body).containsKey("data")) return  true;
+        else return  false;
+    }
     /**
      * 创建HttpRequest对象
      */

@@ -12,6 +12,8 @@ public enum  ResultCode {
      * 暂无
      */
     OK(200, "OK"),
+    TOKEN_INVALID(400,"TOKEN无效"),
+    REGISTER_FAIL(400,"注册失败"),
     CREATED(201, "Created"),
     ERROR(400,"error"),
     NO_LOGIN(400,"获取token失败"),

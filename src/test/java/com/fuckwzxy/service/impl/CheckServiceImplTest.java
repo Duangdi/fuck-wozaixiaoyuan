@@ -9,13 +9,13 @@ import com.fuckwzxy.bean.UserInfo;
 import com.fuckwzxy.common.ApiConstant;
 import com.fuckwzxy.mapper.ApiMapper;
 import com.fuckwzxy.mapper.UserMapper;
-import com.fuckwzxy.service.CheckService;
 import com.fuckwzxy.util.SendUtil;
-import com.sun.org.apache.xpath.internal.SourceTree;
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 import tk.mybatis.mapper.entity.Example;
-
 
 import javax.annotation.Resource;
 import java.text.ParseException;
@@ -24,12 +24,11 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-/**
- * @author wzh
- * 2020/9/23 19:05
- */
-@Service
-public class CheckServiceImpl implements CheckService {
+import static org.junit.jupiter.api.Assertions.*;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+class CheckServiceImplTest {
 
     @Resource
     UserMapper userMapper;
@@ -40,38 +39,8 @@ public class CheckServiceImpl implements CheckService {
     @Autowired
     SendUtil sendUtil;
 
-    @Override
-    public void morningCheck() {
-        List<UserInfo> userInfoList = userMapper.selectAll();
-        ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(1);
-
-        for (UserInfo userInfo : userInfoList) {
-            sendUtil.sendCheckRequest(userInfo, apiInfo, 1);
-        }
-    }
-
-    @Override
-    public void noonCheck() {
-        List<UserInfo> userInfoList = userMapper.selectAll();
-        ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(1);
-
-        for (UserInfo userInfo : userInfoList) {
-            sendUtil.sendCheckRequest(userInfo, apiInfo, 2);
-        }
-    }
-
-    @Override
-    public void eveningCheck() {
-        List<UserInfo> userInfoList = userMapper.selectAll();
-        ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(1);
-
-        for (UserInfo userInfo : userInfoList) {
-            sendUtil.sendCheckRequest(userInfo, apiInfo, 3);
-        }
-    }
-
-    @Override
-    public void singIn() {
+    @Test
+    void singIn() {
         List<UserInfo> userInfoList = userMapper.selectAll();
 
         ApiInfo getSignMessageApiInfo = apiInfoMapper.selectByPrimaryKey(ApiConstant.GET_SIGN_MESSAGE);
@@ -82,10 +51,12 @@ public class CheckServiceImpl implements CheckService {
             String body = sendUtil.GetJSON(userInfo,getSignMessageApiInfo);
             JSONObject data =  null;
             if(!JSONUtil.parseObj(body).containsKey("data") ) {
+                System.out.println("这个b的token失效");
                 continue;
             }else{
                 data = (JSONObject) ((JSONArray) JSONUtil.parseObj(body).get("data")).get(0);
                 if(Integer.parseInt(data.get("state").toString()) != 1) {
+                    System.out.println("这个b已打过卡");
                     continue;
                 }
             }
@@ -95,27 +66,31 @@ public class CheckServiceImpl implements CheckService {
         }
     }
 
-    @Override
-    public void replaceAllSign() throws ParseException {
+    @Test
+    void replaceAllSign() throws ParseException {
         //查班长
         Example example = new Example(UserInfo.class);
-        example.createCriteria().andEqualTo("status", 1);
+        example.createCriteria().andEqualTo("status",1);
         List<UserInfo> userInfoList = userMapper.selectByExample(example);
-
+        System.out.println(userInfoList.get(0).getName());
         //查两个api
         ApiInfo noSignApi = apiInfoMapper.selectByPrimaryKey(5);
         ApiInfo replaySignApi = apiInfoMapper.selectByPrimaryKey(6);
 
         //时间段
-        int seq = helper()-1;
-        if(seq == -1) return;//不在时间段内 跳出
+        int seq = helper();
+        if(seq == 0) return ;
+        System.out.println(seq);
 
         for (UserInfo userInfo : userInfoList) {
             List<String> noSignlist = sendUtil.getAllNoSign(noSignApi,userInfo, seq);
-            if(noSignlist == null)  continue; //token失效
-
-            for(String noSignStr : noSignlist){
-                sendUtil.replaceSign(replaySignApi,userInfo,seq,noSignStr);
+            if(noSignlist == null) {
+                System.out.println("这个btoken失效");
+                continue;
+            }
+            for(String noSign : noSignlist){
+                System.out.println(noSign);
+                sendUtil.replaceSign(replaySignApi,userInfo,seq,noSign);
             }
         }
     }
@@ -152,6 +127,4 @@ public class CheckServiceImpl implements CheckService {
             return false;
         }
     }
-
-
 }
