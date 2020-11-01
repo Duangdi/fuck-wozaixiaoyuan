@@ -12,7 +12,8 @@ public enum  ResultCode {
      * 暂无
      */
     OK(200, "OK"),
-    TOKEN_INVALID(400,"TOKEN无效"),
+    TOKEN_INVALID(401,"TOKEN无效"),
+    IncorrectCredentialsException(400,"密码错误"),
     REGISTER_FAIL(400,"注册失败"),
     CREATED(201, "Created"),
     ERROR(400,"error"),
@@ -27,7 +28,6 @@ public enum  ResultCode {
     USER_PRESENCE (400,"用户已存在"),
     UnknownAccountException(400,"用户不存在"),
     UnAuthentication(400,"用户未认证"),
-    IncorrectCredentialsException(400,"密码错误"),
     DisabledAccountException(400,"账户被冻结"),
     ExpiredCredentialsException(401,"token过期"),
     UnauthorizedException(401,"权限不足"),
