@@ -1,5 +1,6 @@
 package com.fuckwzxy.service;
 
+import java.text.ParseException;
 import java.util.List;
 
 /**
@@ -28,4 +29,9 @@ public interface CheckService {
     void singIn();
 
 
+    /**
+     * 班长全部代打
+     */
+
+    void replaceAllSign() throws ParseException;
 }

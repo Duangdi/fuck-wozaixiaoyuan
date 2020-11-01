@@ -119,8 +119,17 @@ public class SendUtil {
         }
     }
 
-    public boolean replaceSign(ApiInfo apiInfo,UserInfo userInfo, int seq){
-        return false;
+    public void replaceSign(ApiInfo apiInfo,UserInfo userInfo, int seq,String userId){
+
+        HttpRequest request = createHttpRequest(apiInfo,userInfo);
+        //body
+        String httpbody = apiInfo.getBody().replace("seq=", "seq=" + seq);
+        httpbody = httpbody.replace("userId=","userId="+userId);
+
+        request.body(httpbody);
+
+        //return body
+        request.execute();
     }
 
     /**
@@ -132,7 +141,7 @@ public class SendUtil {
         //报文头
         request.contentType(apiInfo.getContenttype());
         //token
-        request.header("token", userInfo.getToken());
+        request.header("token", userInfo.getToken().trim());//总有混蛋 带空格存进来
 
         return request;
     }
