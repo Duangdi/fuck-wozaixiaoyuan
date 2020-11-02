@@ -55,7 +55,6 @@ public class CheckServiceImpl implements CheckService {
         ApiInfo getSignMessageApiInfo = apiInfoMapper.selectByPrimaryKey(ApiConstant.GET_SIGN_MESSAGE);
         ApiInfo signApiInfo = apiInfoMapper.selectByPrimaryKey(ApiConstant.DO_SIGN);
 
-
         for (UserInfo userInfo : userInfoList) {
             String body = sendUtil.GetJSON(userInfo,getSignMessageApiInfo);
             JSONObject data =  null;

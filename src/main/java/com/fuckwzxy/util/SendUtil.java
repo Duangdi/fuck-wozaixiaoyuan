@@ -92,8 +92,9 @@ public class SendUtil {
         HttpResponse response = request.execute();
         String body = response.body();
         if(!JSONUtil.parseObj(body).containsKey("data")) return false;
-        JSONObject data = (JSONObject) ((JSONArray) JSONUtil.parseObj(body).get("data")).get(seq - 1);
-        return Integer.parseInt(data.get("state").toString()) == 0;
+        JSONObject data = (JSONObject) ((JSONArray) JSONUtil.parseObj(body).get("data")).get(seq-1);
+
+        return Integer.parseInt(data.get("type").toString()) == 0;
     }
 
     public List<String> getAllNoSign(ApiInfo apiInfo,UserInfo userInfo, int seq){

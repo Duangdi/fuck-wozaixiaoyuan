@@ -94,10 +94,10 @@ public class UserServiceImpl implements UserService {
             log.info(Thread.currentThread().getName());
 
             //异步执行  避免你刚注册 无法触发打卡或晚签的尴尬
-            userService.helper(userInfo);
+            userService.helper(userInfoUpdateVo);
 
-            Map<Object, Object> map = MapBuilder.create().put("id", userInfo.getId()).put("name",userInfo.getName())
-                                   .put("password", userInfo.getPassword()).put("token", userInfo.getToken()).map();
+            Map<Object, Object> map = MapBuilder.create().put("id", userInfoUpdateVo.getId()).put("name",userInfoUpdateVo.getName())
+                                   .put("password", userInfoUpdateVo.getPassword()).put("token", userInfoUpdateVo.getToken()).map();
 
             return ResultFactory.success(map, ResultCode.OK);
         }
@@ -125,7 +125,6 @@ public class UserServiceImpl implements UserService {
 
         if (sendUtil.needCheck(JudgeApi,userInfo, seq)) {
             sendUtil.sendCheckRequest(userInfo,DoCheckApi , seq);
-            log.info(userInfo.getId()+"已经打卡");
         }
     }
 
