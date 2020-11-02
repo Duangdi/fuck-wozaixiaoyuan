@@ -91,6 +91,7 @@ public class SendUtil {
         HttpRequest request = createHttpRequest(apiInfo,userInfo);
         HttpResponse response = request.execute();
         String body = response.body();
+        if(!JSONUtil.parseObj(body).containsKey("data")) return false;
         JSONObject data = (JSONObject) ((JSONArray) JSONUtil.parseObj(body).get("data")).get(seq - 1);
         return Integer.parseInt(data.get("state").toString()) == 0;
     }

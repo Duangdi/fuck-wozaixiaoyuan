@@ -11,17 +11,12 @@ import com.fuckwzxy.mapper.ApiMapper;
 import com.fuckwzxy.mapper.UserMapper;
 import com.fuckwzxy.service.CheckService;
 import com.fuckwzxy.util.SendUtil;
-import com.sun.org.apache.xpath.internal.SourceTree;
+import com.fuckwzxy.util.TimeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
-
-
 import javax.annotation.Resource;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -40,33 +35,16 @@ public class CheckServiceImpl implements CheckService {
     @Autowired
     SendUtil sendUtil;
 
-    @Override
-    public void morningCheck() {
-        List<UserInfo> userInfoList = userMapper.selectAll();
-        ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(1);
-
-        for (UserInfo userInfo : userInfoList) {
-            sendUtil.sendCheckRequest(userInfo, apiInfo, 1);
-        }
-    }
+    @Autowired
+    TimeUtil timeUtil;
 
     @Override
-    public void noonCheck() {
+    public void ThreeCheck(int seq){
         List<UserInfo> userInfoList = userMapper.selectAll();
-        ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(1);
+        ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(ApiConstant.DO_CHECK);
 
         for (UserInfo userInfo : userInfoList) {
-            sendUtil.sendCheckRequest(userInfo, apiInfo, 2);
-        }
-    }
-
-    @Override
-    public void eveningCheck() {
-        List<UserInfo> userInfoList = userMapper.selectAll();
-        ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(1);
-
-        for (UserInfo userInfo : userInfoList) {
-            sendUtil.sendCheckRequest(userInfo, apiInfo, 3);
+            sendUtil.sendCheckRequest(userInfo, apiInfo, seq);
         }
     }
 
@@ -103,55 +81,20 @@ public class CheckServiceImpl implements CheckService {
         List<UserInfo> userInfoList = userMapper.selectByExample(example);
 
         //查两个api
-        ApiInfo noSignApi = apiInfoMapper.selectByPrimaryKey(5);
-        ApiInfo replaySignApi = apiInfoMapper.selectByPrimaryKey(6);
+        ApiInfo noSignApi = apiInfoMapper.selectByPrimaryKey(ApiConstant.GET_All_NO_SIGN);
+        ApiInfo replaySignApi = apiInfoMapper.selectByPrimaryKey(ApiConstant.REPLACE_SIGN);
 
         //时间段
-        int seq = helper()-1;
-        if(seq == -1) return;//不在时间段内 跳出
+        int seq = timeUtil.getSeq();
+        if(seq == 0 || seq == 4) return ;//不在时间段内 跳出
 
         for (UserInfo userInfo : userInfoList) {
             List<String> noSignlist = sendUtil.getAllNoSign(noSignApi,userInfo, seq);
-            if(noSignlist == null)  continue; //token失效
+            if(noSignlist == null)  continue; //班长token失效
 
             for(String noSignStr : noSignlist){
                 sendUtil.replaceSign(replaySignApi,userInfo,seq,noSignStr);
             }
         }
     }
-
-    public int helper() throws ParseException {
-        SimpleDateFormat df = new SimpleDateFormat("HH:mm");// 设置日期格式
-        Date now = df.parse(df.format(new Date()));
-
-        if(belongCalendar(now, df.parse("00:01"), df.parse("05:00"))){
-            return 1;
-        }else if(belongCalendar(now, df.parse("11:01"), df.parse("14:59"))){
-            return 2;
-        }else if(belongCalendar(now, df.parse("17:01"), df.parse("20:59"))){
-            return 3;
-        }
-
-        return 0;
-    }
-
-    //https://blog.csdn.net/finaly_yu/article/details/87632726
-    public boolean belongCalendar(Date nowTime, Date beginTime, Date endTime) {
-        Calendar date = Calendar.getInstance();
-        date.setTime(nowTime);
-
-        Calendar begin = Calendar.getInstance();
-        begin.setTime(beginTime);
-
-        Calendar end = Calendar.getInstance();
-        end.setTime(endTime);
-
-        if (date.after(begin) && date.before(end)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-
 }

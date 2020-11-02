@@ -1,0 +1,599 @@
+00:00:16.927 [scheduling-1] INFO  c.f.s.DailyScheduled - [morningCheck,24] - 开始进行晨检......
+08:27:00.762 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+08:27:00.856 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStarting,55] - Starting CheckServiceImplTest on DESKTOP-KSVGB5Q with PID 14052 (started by Dakuang in E:\fuckwzxy)
+08:27:00.858 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+08:27:05.832 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+08:27:06.480 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+08:27:06.629 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStarted,61] - Started CheckServiceImplTest in 7.092 seconds (JVM running for 10.753)
+08:27:07.366 [main] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+08:27:07.973 [main] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+08:27:08.169 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+08:27:08.171 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+08:27:08.172 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+08:27:08.182 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+08:29:26.315 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+08:29:26.335 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStarting,55] - Starting CheckServiceImplTest on DESKTOP-KSVGB5Q with PID 18396 (started by Dakuang in E:\fuckwzxy)
+08:29:26.338 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+08:29:29.762 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+08:29:30.322 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+08:29:30.436 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStarted,61] - Started CheckServiceImplTest in 4.865 seconds (JVM running for 6.75)
+08:29:30.854 [main] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+08:29:31.373 [main] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+08:29:31.494 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+08:29:31.496 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+08:29:31.497 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+08:29:31.551 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+08:31:24.125 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+08:31:24.138 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStarting,55] - Starting CheckServiceImplTest on DESKTOP-KSVGB5Q with PID 6276 (started by Dakuang in E:\fuckwzxy)
+08:31:24.140 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+08:31:27.943 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+08:31:28.557 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+08:31:28.673 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStarted,61] - Started CheckServiceImplTest in 5.202 seconds (JVM running for 7.064)
+08:31:29.115 [main] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+08:31:29.680 [main] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+08:31:32.216 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+08:31:32.217 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+08:31:32.218 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+08:31:32.232 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+08:32:30.397 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+08:32:30.430 [main] INFO  c.f.u.SendUtilTest - [logStarting,55] - Starting SendUtilTest on DESKTOP-KSVGB5Q with PID 17504 (started by Dakuang in E:\fuckwzxy)
+08:32:30.434 [main] INFO  c.f.u.SendUtilTest - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+08:32:34.866 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+08:32:35.782 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+08:32:35.971 [main] INFO  c.f.u.SendUtilTest - [logStarted,61] - Started SendUtilTest in 6.583 seconds (JVM running for 8.832)
+08:32:46.406 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+08:32:46.448 [main] INFO  c.f.u.SendUtilTest - [logStarting,55] - Starting SendUtilTest on DESKTOP-KSVGB5Q with PID 12016 (started by Dakuang in E:\fuckwzxy)
+08:32:46.451 [main] INFO  c.f.u.SendUtilTest - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+08:32:50.199 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+08:32:50.878 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+08:32:50.994 [main] INFO  c.f.u.SendUtilTest - [logStarted,61] - Started SendUtilTest in 5.307 seconds (JVM running for 7.116)
+08:32:53.815 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+08:32:53.817 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+08:33:44.915 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+08:33:44.933 [main] INFO  c.f.u.SendUtilTest - [logStarting,55] - Starting SendUtilTest on DESKTOP-KSVGB5Q with PID 16476 (started by Dakuang in E:\fuckwzxy)
+08:33:44.936 [main] INFO  c.f.u.SendUtilTest - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+08:33:48.342 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+08:33:48.884 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+08:33:48.994 [main] INFO  c.f.u.SendUtilTest - [logStarted,61] - Started SendUtilTest in 4.715 seconds (JVM running for 6.422)
+08:33:51.722 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+08:33:51.725 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+08:34:13.417 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+08:34:13.423 [main] INFO  c.f.u.SendUtilTest - [logStarting,55] - Starting SendUtilTest on DESKTOP-KSVGB5Q with PID 7060 (started by Dakuang in E:\fuckwzxy)
+08:34:13.426 [main] INFO  c.f.u.SendUtilTest - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+08:34:16.778 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+08:34:17.401 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+08:34:17.515 [main] INFO  c.f.u.SendUtilTest - [logStarted,61] - Started SendUtilTest in 4.823 seconds (JVM running for 6.636)
+08:34:20.094 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+08:34:20.096 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+08:36:06.041 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+08:36:06.065 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStarting,55] - Starting CheckServiceImplTest on DESKTOP-KSVGB5Q with PID 15656 (started by Dakuang in E:\fuckwzxy)
+08:36:06.068 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+08:36:09.424 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+08:36:10.047 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+08:36:10.161 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStarted,61] - Started CheckServiceImplTest in 4.831 seconds (JVM running for 6.603)
+08:36:10.614 [main] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+08:36:11.157 [main] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+08:36:13.423 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+08:36:13.425 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+08:36:13.426 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+08:36:13.438 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+08:38:41.767 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+08:38:41.797 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStarting,55] - Starting CheckServiceImplTest on DESKTOP-KSVGB5Q with PID 15028 (started by Dakuang in E:\fuckwzxy)
+08:38:41.799 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+08:38:45.094 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+08:38:45.625 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+08:38:45.738 [main] INFO  c.f.s.i.CheckServiceImplTest - [logStarted,61] - Started CheckServiceImplTest in 4.618 seconds (JVM running for 6.281)
+08:38:46.137 [main] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+08:38:46.678 [main] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+08:38:49.509 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+08:38:49.512 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+08:38:49.513 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+08:38:49.523 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+08:55:47.343 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+08:55:47.375 [main] INFO  c.f.s.i.UserServiceImplTest - [logStarting,55] - Starting UserServiceImplTest on DESKTOP-KSVGB5Q with PID 17540 (started by Dakuang in E:\fuckwzxy)
+08:55:47.378 [main] INFO  c.f.s.i.UserServiceImplTest - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+08:55:50.758 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+08:55:51.327 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+08:55:51.435 [main] INFO  c.f.s.i.UserServiceImplTest - [logStarted,61] - Started UserServiceImplTest in 4.759 seconds (JVM running for 6.533)
+08:55:51.758 [main] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+08:55:52.184 [main] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+08:55:55.692 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+08:55:55.694 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+08:55:55.696 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+08:55:55.711 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+09:46:48.214 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+09:46:48.244 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 17664 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+09:46:48.245 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+09:46:49.947 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+09:46:49.965 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+09:46:49.966 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+09:46:49.967 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+09:46:49.969 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+09:46:49.969 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+09:46:49.970 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+09:46:50.063 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+09:46:50.211 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+09:46:50.212 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1863 ms
+09:46:51.065 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+09:46:51.345 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+09:46:51.385 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+09:46:51.400 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+09:46:51.402 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+09:46:51.406 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Pausing ProtocolHandler ["http-nio-8888"]
+09:46:51.407 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+09:46:51.417 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-8888"]
+09:46:51.417 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-8888"]
+09:46:51.426 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+09:49:56.151 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+09:49:56.171 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 6500 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+09:49:56.172 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+09:49:57.655 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+09:49:57.665 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+09:49:57.666 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+09:49:57.666 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+09:49:57.668 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+09:49:57.669 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+09:49:57.669 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+09:49:57.673 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+09:49:57.773 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+09:49:57.773 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1520 ms
+09:49:58.524 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+09:49:58.736 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+09:49:58.776 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+09:49:58.791 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+09:49:58.793 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+09:49:58.797 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Pausing ProtocolHandler ["http-nio-8888"]
+09:49:58.797 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+09:49:58.801 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-8888"]
+09:49:58.802 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-8888"]
+09:49:58.811 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+09:50:10.340 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+09:50:10.366 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 2100 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+09:50:10.367 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+09:50:11.872 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+09:50:11.882 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+09:50:11.883 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+09:50:11.884 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+09:50:11.886 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+09:50:11.886 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+09:50:11.886 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+09:50:11.891 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+09:50:11.995 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+09:50:11.996 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1548 ms
+09:50:12.846 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+09:50:13.069 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+09:50:13.110 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+09:50:13.191 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8888 (http) with context path ''
+09:50:13.208 [main] INFO  c.f.FuckwzxyApplication - [logStarted,61] - Started FuckwzxyApplication in 3.504 seconds (JVM running for 4.97)
+09:50:41.560 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:50:41.560 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+09:50:41.568 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 8 ms
+09:50:41.773 [http-nio-8888-exec-1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+09:50:41.991 [http-nio-8888-exec-1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+09:51:04.908 [http-nio-8888-exec-3] INFO  c.f.s.i.UserServiceImpl - [helper,118] - http-nio-8888-exec-3
+10:02:39.609 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+10:02:39.637 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 9396 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+10:02:39.639 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+10:02:41.317 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+10:02:41.328 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+10:02:41.329 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:02:41.329 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+10:02:41.331 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+10:02:41.331 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+10:02:41.331 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+10:02:41.336 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+10:02:41.440 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:02:41.440 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1719 ms
+10:02:42.334 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+10:02:42.574 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+10:02:42.618 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+10:02:42.646 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8888 (http) with context path ''
+10:02:42.665 [main] INFO  c.f.FuckwzxyApplication - [logStarted,61] - Started FuckwzxyApplication in 3.817 seconds (JVM running for 5.526)
+10:03:41.720 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:03:41.721 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+10:03:41.728 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 7 ms
+10:03:41.883 [http-nio-8888-exec-1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+10:03:42.123 [http-nio-8888-exec-1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+10:03:43.508 [http-nio-8888-exec-1] INFO  c.f.s.i.UserServiceImpl - [updateUser,89] - http-nio-8888-exec-1
+10:03:43.510 [http-nio-8888-exec-1] INFO  c.f.s.i.UserServiceImpl - [helper,119] - http-nio-8888-exec-1
+10:40:25.908 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+10:40:25.933 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 1492 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+10:40:25.935 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+10:40:27.484 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+10:40:27.494 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+10:40:27.495 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:40:27.495 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+10:40:27.497 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+10:40:27.497 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+10:40:27.498 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+10:40:27.502 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+10:40:27.600 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:40:27.600 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1572 ms
+10:40:28.401 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+10:40:28.669 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+10:40:28.728 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+10:40:28.769 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8888 (http) with context path ''
+10:40:28.793 [main] INFO  c.f.FuckwzxyApplication - [logStarted,61] - Started FuckwzxyApplication in 3.625 seconds (JVM running for 5.275)
+10:41:05.663 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:41:05.664 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+10:41:05.672 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 8 ms
+10:41:05.818 [http-nio-8888-exec-1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+10:41:06.031 [http-nio-8888-exec-1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+10:41:07.400 [http-nio-8888-exec-1] INFO  c.f.s.i.UserServiceImpl - [updateUser,93] - http-nio-8888-exec-1
+10:41:07.412 [task-1] INFO  c.f.util.TimeUtil - [getSeq,19] - task-1
+10:47:19.162 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+10:47:19.203 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 3796 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+10:47:19.205 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+10:47:20.839 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+10:47:20.850 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+10:47:20.851 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:47:20.852 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+10:47:20.854 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+10:47:20.854 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+10:47:20.854 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+10:47:20.859 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+10:47:20.984 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:47:20.984 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1688 ms
+10:47:21.806 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+10:47:22.017 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+10:47:22.059 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+10:47:22.087 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8888 (http) with context path ''
+10:47:22.105 [main] INFO  c.f.FuckwzxyApplication - [logStarted,61] - Started FuckwzxyApplication in 3.678 seconds (JVM running for 5.247)
+10:48:10.551 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:48:10.552 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+10:48:10.560 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 8 ms
+10:48:10.710 [http-nio-8888-exec-1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+10:48:10.934 [http-nio-8888-exec-1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+10:48:12.341 [http-nio-8888-exec-1] INFO  c.f.s.i.UserServiceImpl - [updateUser,93] - http-nio-8888-exec-1
+10:48:12.341 [http-nio-8888-exec-1] INFO  c.f.util.TimeUtil - [getSeq,18] - http-nio-8888-exec-1
+10:56:52.899 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+10:56:52.937 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 9872 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+10:56:52.939 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+10:56:54.871 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+10:56:54.883 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+10:56:54.884 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:56:54.885 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+10:56:54.887 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+10:56:54.887 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+10:56:54.888 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+10:56:54.892 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+10:56:55.000 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:56:55.000 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1975 ms
+10:56:55.525 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+10:56:55.538 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:04:58.116 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:04:58.146 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 14800 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:04:58.148 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:04:59.764 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:04:59.775 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:04:59.776 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:04:59.776 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:04:59.778 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:04:59.778 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:04:59.779 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:04:59.783 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:04:59.885 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:04:59.885 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1653 ms
+11:05:00.694 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+11:05:00.913 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+11:05:00.954 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+11:05:00.983 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8888 (http) with context path ''
+11:05:01.000 [main] INFO  c.f.FuckwzxyApplication - [logStarted,61] - Started FuckwzxyApplication in 3.582 seconds (JVM running for 5.145)
+11:05:01.574 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:05:01.574 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+11:05:01.655 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 80 ms
+11:05:09.338 [http-nio-8888-exec-2] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+11:05:09.560 [http-nio-8888-exec-2] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+11:05:10.991 [http-nio-8888-exec-2] INFO  c.f.s.i.UserServiceImpl - [updateUser,97] - http-nio-8888-exec-2
+11:05:10.997 [task-1] INFO  c.f.util.TimeUtil - [getSeq,18] - task-1
+11:05:11.063 [task-1] INFO  c.f.s.i.UserServiceImpl - [helper,124] - task-1
+11:08:11.365 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:08:11.400 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 808 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:08:11.401 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:08:12.985 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:08:12.995 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:08:12.996 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:08:12.996 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:08:12.998 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:08:12.999 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:08:12.999 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:08:13.004 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:08:13.106 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:08:13.106 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1626 ms
+11:08:13.635 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+11:08:13.649 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:08:54.187 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:08:54.231 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 17200 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:08:54.232 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:08:55.812 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:08:55.822 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:08:55.823 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:08:55.824 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:08:55.826 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:08:55.826 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:08:55.826 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:08:55.831 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:08:55.935 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:08:55.935 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1613 ms
+11:08:56.462 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+11:08:56.476 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:13:49.035 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:13:49.062 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 17316 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:13:49.064 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:13:50.893 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:13:50.903 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:13:50.905 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:13:50.905 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:13:50.907 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:13:50.907 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:13:50.908 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:13:50.912 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:13:51.016 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:13:51.017 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1855 ms
+11:13:51.809 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+11:13:52.029 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+11:13:52.071 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+11:13:52.088 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+11:13:52.090 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+11:13:52.095 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Pausing ProtocolHandler ["http-nio-8888"]
+11:13:52.095 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+11:13:52.100 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-8888"]
+11:13:52.100 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-8888"]
+11:13:52.110 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:14:16.440 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:14:16.473 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 10572 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:14:16.475 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:14:18.021 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:14:18.031 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:14:18.032 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:14:18.032 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:14:18.034 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:14:18.035 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:14:18.035 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:14:18.039 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:14:18.139 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:14:18.140 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1586 ms
+11:14:18.924 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+11:14:19.139 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+11:14:19.179 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+11:14:19.207 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8888 (http) with context path ''
+11:14:19.224 [main] INFO  c.f.FuckwzxyApplication - [logStarted,61] - Started FuckwzxyApplication in 3.476 seconds (JVM running for 5.052)
+11:15:11.840 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:15:11.875 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 16876 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:15:11.877 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:15:13.474 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:15:13.484 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:15:13.485 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:15:13.485 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:15:13.487 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:15:13.487 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:15:13.488 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:15:13.492 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:15:13.596 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:15:13.596 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1626 ms
+11:15:14.388 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+11:15:14.609 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+11:15:14.650 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+11:15:14.678 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8888 (http) with context path ''
+11:15:14.696 [main] INFO  c.f.FuckwzxyApplication - [logStarted,61] - Started FuckwzxyApplication in 3.594 seconds (JVM running for 5.173)
+11:16:44.679 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:16:44.709 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 15808 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:16:44.711 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:16:46.291 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:16:46.301 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:16:46.302 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:16:46.302 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:16:46.304 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:16:46.304 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:16:46.305 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:16:46.309 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:16:46.408 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:16:46.409 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1620 ms
+11:16:47.196 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+11:16:47.415 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+11:16:47.457 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+11:16:47.485 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8888 (http) with context path ''
+11:16:47.503 [main] INFO  c.f.FuckwzxyApplication - [logStarted,61] - Started FuckwzxyApplication in 3.492 seconds (JVM running for 5.043)
+11:17:18.992 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:17:19.032 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 2120 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:17:19.034 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:17:20.996 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:17:21.006 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:17:21.007 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:17:21.008 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:17:21.009 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:17:21.010 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:17:21.010 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:17:21.015 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:17:21.116 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:17:21.117 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1976 ms
+11:17:21.928 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+11:17:22.143 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+11:17:22.184 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+11:17:22.213 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8888 (http) with context path ''
+11:17:22.231 [main] INFO  c.f.FuckwzxyApplication - [logStarted,61] - Started FuckwzxyApplication in 4.005 seconds (JVM running for 5.641)
+11:17:39.089 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:17:39.112 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 13672 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:17:39.113 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:17:40.760 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:17:40.770 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:17:40.771 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:17:40.771 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:17:40.773 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:17:40.773 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:17:40.774 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:17:40.778 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:17:40.878 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:17:40.879 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1688 ms
+11:17:41.444 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+11:17:41.459 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:20:06.073 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:20:06.105 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 9044 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:20:06.107 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:20:07.696 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:20:07.706 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:20:07.707 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:20:07.707 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:20:07.709 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:20:07.710 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:20:07.710 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:20:07.714 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:20:07.873 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:20:07.873 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1681 ms
+11:20:08.394 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+11:20:08.407 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:20:41.069 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:20:41.097 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 5432 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:20:41.099 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:20:42.752 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:20:42.764 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:20:42.765 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:20:42.766 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:20:42.768 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:20:42.768 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:20:42.768 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:20:42.773 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:20:42.882 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:20:42.883 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1703 ms
+11:20:43.668 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+11:20:43.882 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+11:20:43.923 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+11:20:43.951 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8888 (http) with context path ''
+11:20:43.969 [main] INFO  c.f.FuckwzxyApplication - [logStarted,61] - Started FuckwzxyApplication in 3.666 seconds (JVM running for 5.26)
+11:21:37.057 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:21:37.090 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 17412 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:21:37.092 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:21:38.809 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:21:38.819 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:21:38.820 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:21:38.820 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:21:38.822 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:21:38.823 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:21:38.823 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:21:38.827 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:21:38.931 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:21:38.932 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1752 ms
+11:21:39.470 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+11:21:39.557 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:22:49.136 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:22:49.174 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 16356 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:22:49.176 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:22:50.804 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:22:50.817 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:22:50.818 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:22:50.818 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:22:50.820 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:22:50.820 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:22:50.821 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:22:50.825 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:22:50.934 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:22:50.934 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1672 ms
+11:22:51.527 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+11:22:51.541 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:25:22.108 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:25:22.136 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 3264 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:25:22.138 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:25:23.752 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:25:23.763 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:25:23.764 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:25:23.764 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:25:23.766 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:25:23.766 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:25:23.766 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:25:23.771 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:25:23.872 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:25:23.873 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1649 ms
+11:25:24.787 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+11:25:25.041 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+11:25:25.102 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+11:25:25.132 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8888 (http) with context path ''
+11:25:25.153 [main] INFO  c.f.FuckwzxyApplication - [logStarted,61] - Started FuckwzxyApplication in 3.745 seconds (JVM running for 5.278)
+11:25:44.014 [http-nio-8888-exec-5] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:25:44.015 [http-nio-8888-exec-5] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+11:25:44.025 [http-nio-8888-exec-5] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 10 ms
+11:26:53.449 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:26:53.476 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 9768 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:26:53.478 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:26:55.048 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:26:55.059 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:26:55.060 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:26:55.061 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:26:55.063 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:26:55.063 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:26:55.063 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:26:55.067 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:26:55.172 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:26:55.172 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1608 ms
+11:26:55.699 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+11:26:55.713 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:28:57.803 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+11:28:57.843 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 10056 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+11:28:57.844 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:28:59.406 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+11:28:59.417 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+11:28:59.418 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:28:59.418 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:28:59.420 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+11:28:59.421 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:28:59.421 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:28:59.425 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+11:28:59.529 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:28:59.529 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1607 ms
+11:29:00.325 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+11:29:00.551 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+11:29:00.592 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+11:29:00.621 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8888 (http) with context path ''
+11:29:00.639 [main] INFO  c.f.FuckwzxyApplication - [logStarted,61] - Started FuckwzxyApplication in 3.569 seconds (JVM running for 5.135)
+11:29:58.797 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:29:58.797 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+11:29:58.805 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 8 ms
+11:29:58.957 [http-nio-8888-exec-1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+11:29:59.181 [http-nio-8888-exec-1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+11:30:00.709 [http-nio-8888-exec-1] INFO  c.f.s.i.UserServiceImpl - [updateUser,94] - http-nio-8888-exec-1
+11:30:00.797 [task-1] INFO  c.f.s.i.UserServiceImpl - [helper,120] - task-1
+12:07:04.578 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.5.Final
+12:07:04.615 [main] INFO  c.f.FuckwzxyApplication - [logStarting,55] - Starting FuckwzxyApplication on DESKTOP-KSVGB5Q with PID 11164 (E:\fuckwzxy\target\classes started by Dakuang in E:\fuckwzxy)
+12:07:04.617 [main] INFO  c.f.FuckwzxyApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+12:07:06.178 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8888 (http)
+12:07:06.189 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+12:07:06.190 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:07:06.190 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+12:07:06.192 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+12:07:06.192 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12:07:06.193 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12:07:06.197 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+12:07:06.299 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:07:06.300 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 1592 ms
+12:07:07.090 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+12:07:07.312 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+12:07:07.354 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+12:07:07.383 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8888 (http) with context path ''
+12:07:07.401 [main] INFO  c.f.FuckwzxyApplication - [logStarted,61] - Started FuckwzxyApplication in 3.543 seconds (JVM running for 5.128)
+12:07:23.738 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:07:23.739 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+12:07:23.746 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 7 ms
+12:07:23.899 [http-nio-8888-exec-1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+12:07:24.117 [http-nio-8888-exec-1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+12:07:25.553 [http-nio-8888-exec-1] INFO  c.f.s.i.UserServiceImpl - [updateUser,94] - http-nio-8888-exec-1

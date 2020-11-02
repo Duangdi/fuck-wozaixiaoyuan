@@ -22,21 +22,21 @@ public class DailyScheduled {
     @Scheduled(cron = "15 0 0 * * *")
     public void morningCheck() {
         log.info("开始进行晨检......");
-        checkService.morningCheck();
+        checkService.ThreeCheck(1);
     }
 
     //11点15秒
     @Scheduled(cron = "15 0 11 * * *")
     public void noonCheck() {
         log.info("开始进行午检......");
-        checkService.noonCheck();
+        checkService.ThreeCheck(2);
     }
 
     //17点15秒
     @Scheduled(cron = "15 0 17 * * *")
     public void eveningCheck() {
         log.info("开始进行晚检......");
-        checkService.eveningCheck();
+        checkService.ThreeCheck(3);
     }
 
     //20点5分10秒

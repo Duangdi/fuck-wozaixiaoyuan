@@ -8,20 +8,11 @@ import java.util.List;
  * 2020/9/23 19:03
  */
 public interface CheckService {
-    /**
-     * 晨检
-     */
-    void morningCheck();
 
     /**
-     * 午检
+     * 三检
      */
-    void noonCheck();
-
-    /**
-     * 晚检
-     */
-    void eveningCheck();
+    void ThreeCheck(int seq);
 
     /**
      * 签到
@@ -30,8 +21,7 @@ public interface CheckService {
 
 
     /**
-     * 班长全部代打
+     * 代签
      */
-
     void replaceAllSign() throws ParseException;
 }

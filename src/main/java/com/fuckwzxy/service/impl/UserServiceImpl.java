@@ -15,18 +15,20 @@ import com.fuckwzxy.mapper.ApiMapper;
 import com.fuckwzxy.mapper.UserMapper;
 import com.fuckwzxy.service.UserService;
 import com.fuckwzxy.util.SendUtil;
+import com.fuckwzxy.util.TimeUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
 import javax.annotation.Resource;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Map;
 
 @Service
+@Slf4j
 public class UserServiceImpl implements UserService {
 
     @Resource
@@ -37,6 +39,13 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     SendUtil sendUtil;
+
+    @Autowired
+    TimeUtil timeUtil;
+
+    @Autowired @Lazy
+    UserService userService;
+
 
     @Override
     public <T> Result addUser(UserInfo userInfo) {
@@ -51,16 +60,12 @@ public class UserServiceImpl implements UserService {
         }catch (Exception e){
             return ResultFactory.fail(ResultCode.REGISTER_FAIL);
         }
-        
-        Map<Object, Object> map = MapBuilder.create()
-                .put("id", userInfo.getId())
-                .put("name", userInfo.getName())
-                .put("password", userInfo.getPassword())
-                .put("status",userInfo.getStatus())
-                .map();
-        
+
+
+        Map<Object, Object> map = MapBuilder.create().put("id", userInfo.getId()).put("name", userInfo.getName())
+                               .put("password", userInfo.getPassword()).put("status",userInfo.getStatus()).map();
+
         return ResultFactory.success(map,ResultCode.OK);
-        
     }
 
     @Override
@@ -74,52 +79,56 @@ public class UserServiceImpl implements UserService {
         if(userInfo == null ){//学号或密码错误
             return ResultFactory.fail(ResultCode.IncorrectCredentialsException);
         }else{//更新token值
+            //防止有人粘多了空格进来
+            userInfoUpdateVo.setToken(userInfoUpdateVo.getToken().trim());
 
+            //获取校验token API
+            ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(ApiConstant.JUDGE_IVAILD);
+            if(!sendUtil.JudgeTokenIsValid(apiInfo,userInfoUpdateVo)) return ResultFactory.fail(ResultCode.TOKEN_INVALID);
+
+            //更新token
             int status = userMapper.updateByPrimaryKeySelective(userInfoUpdateVo);
             if(status == 0) return  ResultFactory.fail(ResultCode.UPDATE_FAIL);
 
 
-            ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(7);//获取校验token API
-            if(!sendUtil.JudgeTokenIsValid(apiInfo,userInfoUpdateVo)) return ResultFactory.fail(ResultCode.TOKEN_INVALID);
+            log.info(Thread.currentThread().getName());
 
-            helper(userInfo);//避免你刚注册 无法触发打卡或晚签的尴尬
+            //异步执行  避免你刚注册 无法触发打卡或晚签的尴尬
+            userService.helper(userInfo);
 
-            Map<Object, Object> map = MapBuilder.create()
-                    .put("id", userInfo.getId())
-                    .put("name",userInfo.getName())
-                    .put("password", userInfo.getPassword())
-                    .put("token", userInfo.getToken())
-                    .map();
+            Map<Object, Object> map = MapBuilder.create().put("id", userInfo.getId()).put("name",userInfo.getName())
+                                   .put("password", userInfo.getPassword()).put("token", userInfo.getToken()).map();
+
             return ResultFactory.success(map, ResultCode.OK);
         }
     }
 
-
     public void helper(UserInfo userInfo) throws ParseException {
-        SimpleDateFormat df = new SimpleDateFormat("HH:mm");// 设置日期格式
-        Date now = df.parse(df.format(new Date()));
 
-        if(belongCalendar(now, df.parse("00:01"), df.parse("05:00"))){
-            JudgeAndDo(userInfo,1);
-        }else if(belongCalendar(now, df.parse("11:01"), df.parse("14:59"))){
-            JudgeAndDo(userInfo,2);
-        }else if(belongCalendar(now, df.parse("17:01"), df.parse("20:59"))){
-            JudgeAndDo(userInfo,3);
-        }
-        if(belongCalendar(now, df.parse("20:06"), df.parse("21:59"))){
-            JudgeAndSign(userInfo);
-        }
+        int seq = timeUtil.getSeq();
+
+        if(seq == 0) return;
+        if(seq == 1) JudgeAndDo(userInfo,seq);
+        else if(seq == 2) JudgeAndDo(userInfo,seq);
+        else if(seq == 3) JudgeAndDo(userInfo,seq);
+
+        if(seq == 4) JudgeAndSign(userInfo);
+
     }
 
+
     public void JudgeAndDo(UserInfo userInfo,int seq){
-        ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(ApiConstant.NEED_CHECK);//获取三检状况API
+        //获取三检状况API
+        ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(ApiConstant.NEED_CHECK);
+
         if (sendUtil.needCheck(apiInfo,userInfo, seq)) {
             sendUtil.sendCheckRequest(userInfo, apiInfoMapper.selectByPrimaryKey(ApiConstant.DO_CHECK), seq);
         }
     }
 
     public void JudgeAndSign(UserInfo userInfo){
-        ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(ApiConstant.GET_SIGN_MESSAGE);//获取三检状况API
+        //获取三检状况API
+        ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(ApiConstant.GET_SIGN_MESSAGE);
         String body = sendUtil.GetJSON(userInfo,apiInfo);
 
         if(!JSONUtil.parseObj(body).containsKey("data")) return;
@@ -131,24 +140,4 @@ public class UserServiceImpl implements UserService {
             sendUtil.sendSignRequest(userInfo,signApiInfo,signMessage);
         }
     }
-
-    //https://blog.csdn.net/finaly_yu/article/details/87632726
-    public boolean belongCalendar(Date nowTime, Date beginTime,Date endTime) {
-        Calendar date = Calendar.getInstance();
-        date.setTime(nowTime);
-
-        Calendar begin = Calendar.getInstance();
-        begin.setTime(beginTime);
-
-        Calendar end = Calendar.getInstance();
-        end.setTime(endTime);
-
-        if (date.after(begin) && date.before(end)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-
 }
