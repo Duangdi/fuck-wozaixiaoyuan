@@ -112,7 +112,8 @@ public class UserServiceImpl implements UserService {
         else if(seq == 2) JudgeAndDo(userInfo,seq);
         else if(seq == 3) JudgeAndDo(userInfo,seq);
 
-        if(seq == 4) JudgeAndSign(userInfo);
+        if(timeUtil.JudgeSign()) JudgeAndSign(userInfo);
+
 
     }
 

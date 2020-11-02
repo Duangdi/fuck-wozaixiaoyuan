@@ -5,10 +5,13 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
 
 @Component
 @Slf4j
@@ -25,9 +28,7 @@ public class TimeUtil {
         }else if(belongCalendar(now, df.parse("17:01"), df.parse("20:59"))){
             return 3;
         }
-        if(belongCalendar(now, df.parse("20:06"), df.parse("21:59"))){
-            return 4;
-        }
+
         return 0;
     }
     //https://blog.csdn.net/finaly_yu/article/details/87632726
@@ -46,5 +47,14 @@ public class TimeUtil {
         } else {
             return false;
         }
+    }
+
+    public boolean JudgeSign() throws ParseException {
+        SimpleDateFormat df = new SimpleDateFormat("HH:mm");// 设置日期格式
+        Date now = df.parse(df.format(new Date()));
+        if(belongCalendar(now, df.parse("20:06"), df.parse("21:59"))){
+            return true;
+        }
+        return false;
     }
 }
