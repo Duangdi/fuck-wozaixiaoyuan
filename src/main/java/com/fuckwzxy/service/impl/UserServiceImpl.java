@@ -119,10 +119,13 @@ public class UserServiceImpl implements UserService {
 
     public void JudgeAndDo(UserInfo userInfo,int seq){
         //获取三检状况API
-        ApiInfo apiInfo = apiInfoMapper.selectByPrimaryKey(ApiConstant.NEED_CHECK);
+        ApiInfo JudgeApi = apiInfoMapper.selectByPrimaryKey(ApiConstant.NEED_CHECK);
+        //获取三检API
+        ApiInfo DoCheckApi = apiInfoMapper.selectByPrimaryKey(ApiConstant.DO_CHECK);
 
-        if (sendUtil.needCheck(apiInfo,userInfo, seq)) {
-            sendUtil.sendCheckRequest(userInfo, apiInfoMapper.selectByPrimaryKey(ApiConstant.DO_CHECK), seq);
+        if (sendUtil.needCheck(JudgeApi,userInfo, seq)) {
+            sendUtil.sendCheckRequest(userInfo,DoCheckApi , seq);
+            log.info(userInfo.getId()+"已经打卡");
         }
     }
 
