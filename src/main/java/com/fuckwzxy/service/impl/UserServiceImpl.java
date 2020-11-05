@@ -90,9 +90,6 @@ public class UserServiceImpl implements UserService {
             int status = userMapper.updateByPrimaryKeySelective(userInfoUpdateVo);
             if(status == 0) return  ResultFactory.fail(ResultCode.UPDATE_FAIL);
 
-
-            log.info(Thread.currentThread().getName());
-
             //异步执行  避免你刚注册 无法触发打卡或晚签的尴尬
             userService.helper(userInfoUpdateVo);
 
@@ -105,15 +102,13 @@ public class UserServiceImpl implements UserService {
 
     public void helper(UserInfo userInfo) throws ParseException {
 
-        int seq = timeUtil.getSeq();
+        if(timeUtil.JudgeSign()) JudgeAndSign(userInfo);
 
+        int seq = timeUtil.getSeq();
         if(seq == 0) return;
         if(seq == 1) JudgeAndDo(userInfo,seq);
         else if(seq == 2) JudgeAndDo(userInfo,seq);
         else if(seq == 3) JudgeAndDo(userInfo,seq);
-
-        if(timeUtil.JudgeSign()) JudgeAndSign(userInfo);
-
 
     }
 
@@ -137,7 +132,8 @@ public class UserServiceImpl implements UserService {
         if(!JSONUtil.parseObj(body).containsKey("data")) return;
         JSONObject data = (JSONObject) ((JSONArray) JSONUtil.parseObj(body).get("data")).get(0);
 
-        if(Integer.parseInt(data.get("state").toString()) == 1){
+
+        if(Integer.parseInt(data.get("type").toString()) == 0){
             SignMessage signMessage = new SignMessage((String) data.getObj("id"), (String) data.get("logId"));
             ApiInfo signApiInfo = apiInfoMapper.selectByPrimaryKey(ApiConstant.DO_SIGN);//获取晚签到API
             sendUtil.sendSignRequest(userInfo,signApiInfo,signMessage);

@@ -62,13 +62,13 @@ public class CheckServiceImpl implements CheckService {
                 continue;
             }else{
                 data = (JSONObject) ((JSONArray) JSONUtil.parseObj(body).get("data")).get(0);
-                if(Integer.parseInt(data.get("state").toString()) != 1) {
+                if(Integer.parseInt(data.get("type").toString()) == 1) {
                     continue;
+                }else{
+                    SignMessage signMessage = new SignMessage((String) data.getObj("id"), (String) data.get("logId"));
+                    sendUtil.sendSignRequest(userInfo, signApiInfo, signMessage);
                 }
             }
-
-            SignMessage signMessage = new SignMessage((String) data.getObj("id"), (String) data.get("logId"));
-            sendUtil.sendSignRequest(userInfo, signApiInfo, signMessage);
         }
     }
 
