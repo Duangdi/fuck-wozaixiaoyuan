@@ -56,15 +56,12 @@ public class CheckServiceImpl implements CheckService {
         ApiInfo signApiInfo = apiInfoMapper.selectByPrimaryKey(ApiConstant.DO_SIGN);
 
         for (UserInfo userInfo : userInfoList) {
+            if(userInfo.getToken() == null ) continue;
             String body = sendUtil.GetJSON(userInfo,getSignMessageApiInfo);
-            JSONObject data =  null;
-            if(!JSONUtil.parseObj(body).containsKey("data") ) {
-                continue;
-            }else{
-                data = (JSONObject) ((JSONArray) JSONUtil.parseObj(body).get("data")).get(0);
-                if(Integer.parseInt(data.get("type").toString()) == 1) {
-                    continue;
-                }else{
+            JSONArray  jsonArray = (JSONArray) JSONUtil.parseObj(body).getOrDefault("data",null);
+            if(jsonArray != null){
+                JSONObject data = (JSONObject) jsonArray.getObj(0,null);
+                if(data != null && Integer.parseInt(data.get("type").toString()) == 0){
                     SignMessage signMessage = new SignMessage((String) data.getObj("id"), (String) data.get("logId"));
                     sendUtil.sendSignRequest(userInfo, signApiInfo, signMessage);
                 }
